@@ -1,0 +1,78 @@
+body{
+    min-height: 100vh;
+    position: relative;
+}
+
+.loading{
+    display: flex;
+    min-height: 100vh;
+    min-width: 100vw;
+    z-index: 10;
+    background-color: aliceblue;
+    opacity: 0.3;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    font-size: 50px;
+}
+
+#youtube-link-form{
+    position: absolute;
+    bottom: 25%;
+    left: 50%;
+    transform: translate(-50%);
+}
+#playerAndControls{
+    position: absolute;
+    right: 50%;
+    transform: translate(50%);
+}
+
+
+#player{
+    border: solid black 2px;
+
+}
+
+#playerControls{
+    
+    display: flex;
+     /* width: 536px;  */
+    
+    align-items: center;
+    
+    
+}
+
+#seekBar{
+    background-color: black;
+    width: 536px;
+    height: 3px;
+    position: relative;
+    margin-left: 5px;
+   
+}
+
+#seekBar:hover{
+    cursor : pointer;
+}
+
+#seekBarBox{
+    --left:0;
+    left: calc(var(--left)*1%);
+    width: 15px;
+    height: 15px;
+    border: 2px solid black;
+    position: absolute;
+    transform: translate(0%, -50%);
+}
+
+/* #seekBar::after{
+    content: '';
+    width: 13px;
+    height: 13px;
+    background-color: black;
+    position: absolute;
+    transform: translate(0%, -50%);
+
+} */

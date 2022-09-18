@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+       
+    </script>
+    <script defer src="http://localhost:3000/socket.io/socket.io.js"></script>
+    <script>
+        
+    </script>
+    <script defer src="script.js"></script>
+    
+</head>
+<body>
+    <form id="youtube-link-form">
+        <input data-youtube-link type="text" placeholder="youtube video Id">
+        <button data-youtube-link-submit-button>Play Video</button>
+    </form>
+    <!-- 1. The <iframe> (and video player) will replace this <div> tag. -->
+    <div id="playerAndControls">
+        <div id="player"></div>
+        <div id="playerControls">
+            <button>
+                <img style="width: 20px; height:20px" data-play-button src="images/icons8-play-30.png">
+            </button>
+            <button>
+                <img style="width: 20px; height: 20px;" data-pause-button src="images/icons8-pause-30.png">
+            </button>
+            
+            <!-- <button id="playButton" data-play-button>Play</button>
+            <button id="pauseButton" data-pause-button>Pause</button> -->
+            <div  id="seekBar" > 
+                <div id="seekBarBox"></div>
+            </div>
+            
+        </div>
+        </div>
+    
+
+</body>
+
+    
+
+</html>
